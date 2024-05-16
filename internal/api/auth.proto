@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "./gen;auth";
+
+service Auth {
+  rpc HashAndStore(PhoneNumber) returns (HashedCode) {}
+}
+
+message PhoneNumber {
+  string number = 1;
+}
+
+message HashedCode {
+  string code = 1;
+}

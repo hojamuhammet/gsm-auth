@@ -1,0 +1,10 @@
+# everything is set as default in example file
+server:
+  address: localhost
+  port: 50051
+
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  password: 
