@@ -13,5 +13,6 @@ message PhoneNumber {
 }
 
 message HashedCode {
-  string code = 1;
+  string number = 1;
+  string code = 2;
 }
